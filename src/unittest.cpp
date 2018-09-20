@@ -100,7 +100,7 @@ namespace UnitTest {
 
   void assertTrue( bool eval, const char* code, const char* file, size_t line ) {
     if( !eval ) {
-      // deleted in UnitTestFramework destructor
+      // deleted in UnitTest::TestFramework destructor
       auto failure = new TestFailure{ eval, code, file, line };
       TestFramework::Instance().addFailure( failure );
     } else {
@@ -111,7 +111,7 @@ namespace UnitTest {
 
   void assertFalse( bool eval, const char* code, const char* file, size_t line ) {
     if( eval ) {
-      // deleted in UnitTestFramework destructor
+      // deleted in UnitTest::TestFramework destructor
       auto failure = new TestFailure{ eval, code, file, line };
       TestFramework::Instance().addFailure( failure );
     } else {
