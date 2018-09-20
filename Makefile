@@ -25,7 +25,7 @@ SOURCES := $(shell echo $(SRCDIR)/*.cpp)
 HEADERS := $(shell echo $(INCDIR)/*.h)
 COMMON  :=
 OBJECTS := $(patsubst $(SRCDIR)/%,$(OBJDIR)/%,$(SOURCES:.cpp=.o))
-HEADER 	:= $(PROG).h
+HEADER	:= $(PROG).h
 TARGET  := lib$(PROG).a
 
 TAR_INSTALLDIR = $(PREFIX)/lib
