@@ -17,7 +17,7 @@ endif
 
 SRCDIR	:= src
 INCDIR	:= include
-OBJDIR 	:= obj
+OBJDIR	:= obj
 BINDIR	:= bin
 TARDIR	:= lib
 
